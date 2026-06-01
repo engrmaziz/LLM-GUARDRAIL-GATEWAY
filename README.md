@@ -52,7 +52,7 @@ Asynchronous file writes and lock coordination preserve operational safety while
 ### 1) Create and activate a virtual environment
 
 ```bash
-cd LLM-GUARDRAIL-GATEWAY
+cd <repository-root>
 python -m venv .venv
 source .venv/bin/activate
 ```
