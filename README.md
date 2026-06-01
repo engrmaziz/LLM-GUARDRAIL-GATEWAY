@@ -51,8 +51,9 @@ Asynchronous file writes and lock coordination preserve operational safety while
 
 ### 1) Create and activate a virtual environment
 
+From the cloned repository directory:
+
 ```bash
-cd <repository-root>
 python -m venv .venv
 source .venv/bin/activate
 ```
