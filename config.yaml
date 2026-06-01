@@ -1,0 +1,30 @@
+input_rules:
+  # Reject sensitive personal data before forwarding any request to the model.
+  block_pii: true
+  # Stop common prompt-injection patterns and instruction override attempts.
+  block_prompt_injections: true
+  # PII detectors enforced at the gateway boundary.
+  pii_types:
+    - CREDIT_CARD
+    - EMAIL
+    - PHONE
+  # Hard cap for a single inbound payload before tokenization and routing.
+  max_input_tokens: 2000
+
+policy_rules:
+  # Requests involving these domains are not permitted for this gateway.
+  forbidden_topics:
+    - medical advice
+    - financial investments
+    - competitors
+  # Ensure downstream responses conform to a machine-readable contract.
+  enforce_json_output: true
+
+output_rules:
+  # Block unsafe, abusive, or otherwise toxic model outputs.
+  block_toxicity: true
+  # Require these keys in every approved JSON response.
+  required_json_keys:
+    - status
+    - message
+    - data

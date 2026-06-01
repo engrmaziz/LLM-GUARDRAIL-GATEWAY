@@ -1,6 +1,6 @@
-fastapi==0.95.2
-uvicorn[standard]==0.22.0
-pydantic==2.2.2
-PyYAML==6.0
-httpx==0.24.1
-python-dotenv==1.0.0
+fastapi==0.136.3
+uvicorn[standard]==0.48.0
+pydantic==2.13.4
+PyYAML==6.0.3
+httpx==0.28.1
+python-dotenv==1.2.2

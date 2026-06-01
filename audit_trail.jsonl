@@ -1,0 +1,4 @@
+{"timestamp":"2026-06-01T08:12:10.090869+00:00","event_type":"REQUEST_PASSED","latency_ms":377.754,"details":"Request completed successfully"}
+{"timestamp":"2026-06-01T08:12:10.256474+00:00","event_type":"REQUEST_PASSED","latency_ms":161.83,"details":"Request completed successfully"}
+{"timestamp":"2026-06-01T08:12:10.259737+00:00","event_type":"PROMPT_INJECTION_BLOCKED","latency_ms":0.028,"details":"Prompt injection detected"}
+{"timestamp":"2026-06-01T08:12:10.262195+00:00","event_type":"FORBIDDEN_TOPIC_BLOCKED","latency_ms":0.032,"details":"Forbidden topic detected"}
